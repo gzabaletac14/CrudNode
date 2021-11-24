@@ -1,0 +1,27 @@
+{
+  "name": "CrudNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start",
+    "dev": "nodemon src/Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzabaletac14/CrudNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gzabaletac14/CrudNode/issues"
+  },
+  "homepage": "https://github.com/gzabaletac14/CrudNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
