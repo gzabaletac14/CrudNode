@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 
 mongoose
 .connect('mongodb://Localhost/Employees',{
-    // useCreateIndex: true,
-    // useNewUrlParser:true,
-    // useFindAndModify:false,
-    // useUnifiedTopology:true
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 })

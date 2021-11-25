@@ -1,5 +1,6 @@
 const {Schema, model} = require('mongoose')
 
+
 const employeesSchema = new Schema({
     identificacion:{type:String, require: true},
     nombre:{type:String, require: true},
@@ -13,5 +14,6 @@ const employeesSchema = new Schema({
     timestamps: true,
     versionKey: false
 })
+
 
 module.exports = model('employees',employeesSchema)

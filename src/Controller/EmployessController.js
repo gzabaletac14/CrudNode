@@ -1,5 +1,4 @@
 const employeesctrl = {} // creamos un objeto 
-
 const employeeSchema = require('../Models/Employees');
 
 employeesctrl.getAllEmployees = async (req, res) =>
