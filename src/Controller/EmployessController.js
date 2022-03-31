@@ -10,14 +10,12 @@ employeesctrl.createEmployees = async (req, res) =>
 {
     const newEmployees = new employeeSchema(req.body);
     const result = await  employeeSchema.findOne({identificacion: newEmployees.identificacion})
-    if(result == null)
+    if(!result)
     {
         await newEmployees.save();
         res.status(200).send({message:'Usuario registrado con exito'});
-    } else 
-    {            
-        res.status(500).send({message:'Usuario ya se encuentra registrado.'})  
-    }
+    }          
+        res.status(500).send({message:'Usuario ya se encuentra registrado.'})     
 };
 employeesctrl.getEmployees = async (req, res) =>
 {
